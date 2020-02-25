@@ -1,0 +1,152 @@
+body {
+  padding: 0px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-evenly;
+  background-color:#CFEBDF;
+  transition: 0.05s linear;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+nav{
+  background-color: #291F1E;
+  height: 60px;
+}
+
+nav li{
+  font-size: 30px;
+  color: white;
+  height:50px;
+  display: table-cell;
+  line-height: 30px;
+  padding: 1px;
+  transition: margin 0.1s linear;
+
+}
+nav li:hover{
+  margin-bottom: -25px ;
+  border-bottom: 1px solid #070707;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 20px;
+  
+  
+}
+footer{
+  background-color: #5F634F;
+  display: block;
+  margin-top: 815px;
+  color: wheat;
+}
+
+#single-skill{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+#single-skill li{
+  list-style: none;
+  font-size: 20px;
+}
+#skills{
+  margin: 0 auto;
+
+}
+#skills th{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color:#191312;
+  padding: 20px;
+}
+#skills td{
+  text-align: center;
+  font-size:20px;
+  padding: 10px;
+  color: white;
+  background-color: #291F1E;
+  
+}
+#skills td a{
+  text-decoration: none;
+  color: #C1EEFF;
+}
+#skills td a:hover{
+  text-decoration: underline;
+}
+#skills tr{
+  border-bottom: 1px solid #00ffb3;
+}
+#skills-header{
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  
+}
+#centered-wrapper{
+  margin: 0 auto;
+}
+#centered-header{
+  color: white;
+  text-align: center;
+  font-size: 10vmin;
+}
+form{
+  
+}
+#input-pretty{
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  border-radius: 15px;
+  border: none;
+}
+#input-pretty::placeholder{
+  text-align: center;
+}
+#checkbox-pretty{
+  background-color: white;
+  /* transform: scale(7); */
+  zoom:7;
+  color: white;
+  position: absolute;
+  margin-top: -17px;
+  margin-left: 90px;
+}
+#form-big{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+#centered-button{
+  font-size:35px;
+  padding:15px;
+  border-radius: 10px;
+  margin-left: 41%;
+}
+  
+

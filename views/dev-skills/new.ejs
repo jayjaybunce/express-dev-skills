@@ -1,0 +1,19 @@
+<%- include('./partials/head-html')%>
+<%- include('./partials/navbar')%>
+<%- include('./partials/five-space')%>
+</head>
+<body>
+    <div id="centered-wrapper">
+
+        <h1 id="centered-header">Add New Skill</h1>
+        <form action="/dev-skills/new" METHOD="POST" autocomplete="off">
+            <input id="input-pretty" type="text" placeholder="Skill" name="skill">
+            <input id="input-pretty" type="text" placeholder="Number of Projects" name="numProjects">
+            <p id="form-big">Comfortable: </p><input id="checkbox-pretty" type="checkbox" name="comfortable">
+       
+            <button id="centered-button" type="submit">Add Skill</button>
+        </form>
+    </div>
+    <%- include('./partials/footer')%>
+</body>
+</html>

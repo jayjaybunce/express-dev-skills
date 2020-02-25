@@ -1,0 +1,17 @@
+<%- include('./partials/head-html')%>
+    <%- include('./partials/navbar')%>
+    <%- include('./partials/five-space')%>
+    <h1 id="skills-header"><%= title %></h1>
+    <%- include('./partials/five-space')%>
+    <ul id="single-skill">
+        <li>
+            <%= mySkill.skill %> - <%= mySkill.comfortable ? 'Comfortable':'Not comfortable'%> Number of projects: <%= mySkill.numProjects %>
+            <form action="/dev-skills/<%=idx%>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+            </form>
+            <a href="/dev-skills/<%=idx%>/edit">Edit</a>
+        </li>
+    </ul>
+    <%- include('./partials/footer')%>
+</body>
+</html>

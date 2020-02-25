@@ -1,0 +1,23 @@
+<%- include('./partials/head-html')%>
+<%- include('./partials/navbar')%>
+<%- include('./partials/five-space')%>
+<body>
+    <div id="centered-wrapper">
+
+        <h1 id="centered-header">Update Skill</h1>
+        <form action="/dev-skills/<%=idx%>?_method=PUT" METHOD="POST" autocomplete="off">
+            <input id="input-pretty" type="text" placeholder="Skill" name="skill" value="<%= skill.skill%>">
+            <input id="input-pretty" type="text" placeholder="Number of Projects" name="numProjects" value="<%=skill.numProjects%>">
+            <p id="form-big">Comfortable: </p><input id="checkbox-pretty"  type="checkbox"name="comfortable" <%= skill.comfortable? 'checked':''%>>
+            
+            <button id="centered-button"type="submit">Save</button>
+            
+        </form>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="materialUnchecked">
+        <label class="form-check-label" for="materialUnchecked">Material unchecked</label>
+    </div>
+    <%- include('./partials/footer')%>
+    
+</html>
